@@ -1,0 +1,3302 @@
+[
+  {
+    "id": "OS-AC10",
+    "leadPax": "Anand Mishra",
+    "customerId": "CUST-1000",
+    "customerName": "Anand Mishra",
+    "travelDate": "2026-03-05",
+    "bookingDate": "2026-02-28",
+    "service": "Flight",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": true,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T12:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-BD11",
+    "leadPax": "Sumit Jha",
+    "customerId": "CUST-1001",
+    "customerName": "Sumit Jha",
+    "travelDate": "2026-03-06",
+    "bookingDate": "2026-02-28",
+    "service": "Accommodation",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      },
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T11:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-CE12",
+    "leadPax": "Priya Sharma",
+    "customerId": "CUST-1002",
+    "customerName": "Priya Sharma",
+    "travelDate": "2026-03-07",
+    "bookingDate": "2026-02-28",
+    "service": "Transportation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      },
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      },
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T10:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-DF13",
+    "leadPax": "Rahul Verma",
+    "customerId": "CUST-1003",
+    "customerName": "Rahul Verma",
+    "travelDate": "2026-03-08",
+    "bookingDate": "2026-02-28",
+    "service": "Explore UAE",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      },
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T09:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-EG14",
+    "leadPax": "Neha Kapoor",
+    "customerId": "CUST-1004",
+    "customerName": "Neha Kapoor",
+    "travelDate": "2026-03-09",
+    "bookingDate": "2026-02-28",
+    "service": "Hotel",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      },
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      },
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T08:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-FH15",
+    "leadPax": "Vikram Singh",
+    "customerId": "CUST-1005",
+    "customerName": "Vikram Singh",
+    "travelDate": "2026-03-10",
+    "bookingDate": "2026-02-28",
+    "service": "Flight",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      },
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      },
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      },
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T07:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-GI16",
+    "leadPax": "Deepak Mehta",
+    "customerId": "CUST-1006",
+    "customerName": "Deepak Mehta",
+    "travelDate": "2026-03-11",
+    "bookingDate": "2026-02-28",
+    "service": "Accommodation",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      },
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T06:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-HJ17",
+    "leadPax": "Kavita Rao",
+    "customerId": "CUST-1007",
+    "customerName": "Kavita Rao",
+    "travelDate": "2026-03-12",
+    "bookingDate": "2026-02-28",
+    "service": "Transportation",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      },
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      },
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": true,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T05:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-IK18",
+    "leadPax": "Arjun Patel",
+    "customerId": "CUST-1008",
+    "customerName": "Arjun Patel",
+    "travelDate": "2026-03-13",
+    "bookingDate": "2026-02-28",
+    "service": "Explore UAE",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      },
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      },
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      },
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T04:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-JL19",
+    "leadPax": "Sneha Gupta",
+    "customerId": "CUST-1009",
+    "customerName": "Sneha Gupta",
+    "travelDate": "2026-03-14",
+    "bookingDate": "2026-02-28",
+    "service": "Hotel",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      },
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T03:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-KM20",
+    "leadPax": "Rohit Jain",
+    "customerId": "CUST-1010",
+    "customerName": "Rohit Jain",
+    "travelDate": "2026-03-15",
+    "bookingDate": "2026-02-28",
+    "service": "Flight",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      },
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      },
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T02:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-LN21",
+    "leadPax": "Meera Iyer",
+    "customerId": "CUST-1011",
+    "customerName": "Meera Iyer",
+    "travelDate": "2026-03-16",
+    "bookingDate": "2026-02-28",
+    "service": "Accommodation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      },
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      },
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T01:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-MO22",
+    "leadPax": "Anand Mishra",
+    "customerId": "CUST-1012",
+    "customerName": "Anand Mishra",
+    "travelDate": "2026-03-17",
+    "bookingDate": "2026-02-28",
+    "service": "Transportation",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-05T00:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-NP23",
+    "leadPax": "Sumit Jha",
+    "customerId": "CUST-1013",
+    "customerName": "Sumit Jha",
+    "travelDate": "2026-03-18",
+    "bookingDate": "2026-02-28",
+    "service": "Explore UAE",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      },
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      },
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T23:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-OQ24",
+    "leadPax": "Priya Sharma",
+    "customerId": "CUST-1014",
+    "customerName": "Priya Sharma",
+    "travelDate": "2026-03-19",
+    "bookingDate": "2026-02-28",
+    "service": "Hotel",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      },
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      },
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": true,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T22:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-PR25",
+    "leadPax": "Rahul Verma",
+    "customerId": "CUST-1015",
+    "customerName": "Rahul Verma",
+    "travelDate": "2026-03-20",
+    "bookingDate": "2026-02-28",
+    "service": "Flight",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T21:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-QS26",
+    "leadPax": "Neha Kapoor",
+    "customerId": "CUST-1016",
+    "customerName": "Neha Kapoor",
+    "travelDate": "2026-03-21",
+    "bookingDate": "2026-02-28",
+    "service": "Accommodation",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      },
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T20:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-RT27",
+    "leadPax": "Vikram Singh",
+    "customerId": "CUST-1017",
+    "customerName": "Vikram Singh",
+    "travelDate": "2026-03-22",
+    "bookingDate": "2026-02-28",
+    "service": "Transportation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      },
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      },
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T19:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-SU28",
+    "leadPax": "Deepak Mehta",
+    "customerId": "CUST-1018",
+    "customerName": "Deepak Mehta",
+    "travelDate": "2026-03-23",
+    "bookingDate": "2026-02-28",
+    "service": "Explore UAE",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      },
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T18:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-TV29",
+    "leadPax": "Kavita Rao",
+    "customerId": "CUST-1019",
+    "customerName": "Kavita Rao",
+    "travelDate": "2026-03-24",
+    "bookingDate": "2026-02-28",
+    "service": "Hotel",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      },
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      },
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T17:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-UW30",
+    "leadPax": "Arjun Patel",
+    "customerId": "CUST-1020",
+    "customerName": "Arjun Patel",
+    "travelDate": "2026-03-25",
+    "bookingDate": "2026-02-28",
+    "service": "Flight",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      },
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      },
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      },
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T16:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-VX31",
+    "leadPax": "Sneha Gupta",
+    "customerId": "CUST-1021",
+    "customerName": "Sneha Gupta",
+    "travelDate": "2026-03-26",
+    "bookingDate": "2026-02-28",
+    "service": "Accommodation",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      },
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": true,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T15:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-WY32",
+    "leadPax": "Rohit Jain",
+    "customerId": "CUST-1022",
+    "customerName": "Rohit Jain",
+    "travelDate": "2026-03-27",
+    "bookingDate": "2026-02-28",
+    "service": "Transportation",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      },
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      },
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T14:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-XZ33",
+    "leadPax": "Meera Iyer",
+    "customerId": "CUST-1023",
+    "customerName": "Meera Iyer",
+    "travelDate": "2026-03-28",
+    "bookingDate": "2026-02-28",
+    "service": "Explore UAE",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      },
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      },
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      },
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T13:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-Y[34",
+    "leadPax": "Anand Mishra",
+    "customerId": "CUST-1024",
+    "customerName": "Anand Mishra",
+    "travelDate": "2026-03-29",
+    "bookingDate": "2026-02-28",
+    "service": "Hotel",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      },
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T12:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-ZB35",
+    "leadPax": "Sumit Jha",
+    "customerId": "CUST-1025",
+    "customerName": "Sumit Jha",
+    "travelDate": "2026-03-30",
+    "bookingDate": "2026-03-25",
+    "service": "Flight",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      },
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      },
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T11:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-AC36",
+    "leadPax": "Priya Sharma",
+    "customerId": "CUST-1026",
+    "customerName": "Priya Sharma",
+    "travelDate": "2026-03-31",
+    "bookingDate": "2026-03-25",
+    "service": "Accommodation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      },
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      },
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T10:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-BD37",
+    "leadPax": "Rahul Verma",
+    "customerId": "CUST-1027",
+    "customerName": "Rahul Verma",
+    "travelDate": "2026-04-01",
+    "bookingDate": "2026-03-25",
+    "service": "Transportation",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T09:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-CE38",
+    "leadPax": "Neha Kapoor",
+    "customerId": "CUST-1028",
+    "customerName": "Neha Kapoor",
+    "travelDate": "2026-04-02",
+    "bookingDate": "2026-03-25",
+    "service": "Explore UAE",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      },
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      },
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": true,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T08:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-DF39",
+    "leadPax": "Vikram Singh",
+    "customerId": "CUST-1029",
+    "customerName": "Vikram Singh",
+    "travelDate": "2026-04-03",
+    "bookingDate": "2026-03-25",
+    "service": "Hotel",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      },
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      },
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T07:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-EG40",
+    "leadPax": "Deepak Mehta",
+    "customerId": "CUST-1030",
+    "customerName": "Deepak Mehta",
+    "travelDate": "2026-03-05",
+    "bookingDate": "2026-02-23",
+    "service": "Flight",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T06:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-FH41",
+    "leadPax": "Kavita Rao",
+    "customerId": "CUST-1031",
+    "customerName": "Kavita Rao",
+    "travelDate": "2026-03-06",
+    "bookingDate": "2026-02-23",
+    "service": "Accommodation",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      },
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T05:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-GI42",
+    "leadPax": "Arjun Patel",
+    "customerId": "CUST-1032",
+    "customerName": "Arjun Patel",
+    "travelDate": "2026-03-07",
+    "bookingDate": "2026-02-23",
+    "service": "Transportation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      },
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      },
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T04:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-HJ43",
+    "leadPax": "Sneha Gupta",
+    "customerId": "CUST-1033",
+    "customerName": "Sneha Gupta",
+    "travelDate": "2026-03-08",
+    "bookingDate": "2026-02-23",
+    "service": "Explore UAE",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      },
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T03:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-IK44",
+    "leadPax": "Rohit Jain",
+    "customerId": "CUST-1034",
+    "customerName": "Rohit Jain",
+    "travelDate": "2026-03-09",
+    "bookingDate": "2026-02-23",
+    "service": "Hotel",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      },
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      },
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T02:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-JL45",
+    "leadPax": "Meera Iyer",
+    "customerId": "CUST-1035",
+    "customerName": "Meera Iyer",
+    "travelDate": "2026-03-10",
+    "bookingDate": "2026-02-23",
+    "service": "Flight",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      },
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      },
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      },
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": true,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T01:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-KM46",
+    "leadPax": "Anand Mishra",
+    "customerId": "CUST-1036",
+    "customerName": "Anand Mishra",
+    "travelDate": "2026-03-11",
+    "bookingDate": "2026-02-23",
+    "service": "Accommodation",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      },
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-04T00:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-LN47",
+    "leadPax": "Sumit Jha",
+    "customerId": "CUST-1037",
+    "customerName": "Sumit Jha",
+    "travelDate": "2026-03-12",
+    "bookingDate": "2026-02-23",
+    "service": "Transportation",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      },
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      },
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T23:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-MO48",
+    "leadPax": "Priya Sharma",
+    "customerId": "CUST-1038",
+    "customerName": "Priya Sharma",
+    "travelDate": "2026-03-13",
+    "bookingDate": "2026-02-23",
+    "service": "Explore UAE",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      },
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      },
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      },
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T22:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-NP49",
+    "leadPax": "Rahul Verma",
+    "customerId": "CUST-1039",
+    "customerName": "Rahul Verma",
+    "travelDate": "2026-03-14",
+    "bookingDate": "2026-02-23",
+    "service": "Hotel",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      },
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T21:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-OQ50",
+    "leadPax": "Neha Kapoor",
+    "customerId": "CUST-1040",
+    "customerName": "Neha Kapoor",
+    "travelDate": "2026-03-15",
+    "bookingDate": "2026-02-23",
+    "service": "Flight",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      },
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      },
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T20:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-PR51",
+    "leadPax": "Vikram Singh",
+    "customerId": "CUST-1041",
+    "customerName": "Vikram Singh",
+    "travelDate": "2026-03-16",
+    "bookingDate": "2026-02-23",
+    "service": "Accommodation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      },
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      },
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T19:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-QS52",
+    "leadPax": "Deepak Mehta",
+    "customerId": "CUST-1042",
+    "customerName": "Deepak Mehta",
+    "travelDate": "2026-03-17",
+    "bookingDate": "2026-02-23",
+    "service": "Transportation",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": true,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T18:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-RT53",
+    "leadPax": "Kavita Rao",
+    "customerId": "CUST-1043",
+    "customerName": "Kavita Rao",
+    "travelDate": "2026-03-18",
+    "bookingDate": "2026-02-23",
+    "service": "Explore UAE",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      },
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      },
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T17:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-SU54",
+    "leadPax": "Arjun Patel",
+    "customerId": "CUST-1044",
+    "customerName": "Arjun Patel",
+    "travelDate": "2026-03-19",
+    "bookingDate": "2026-02-23",
+    "service": "Hotel",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      },
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      },
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T16:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-TV55",
+    "leadPax": "Sneha Gupta",
+    "customerId": "CUST-1045",
+    "customerName": "Sneha Gupta",
+    "travelDate": "2026-03-20",
+    "bookingDate": "2026-02-23",
+    "service": "Flight",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T15:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-UW56",
+    "leadPax": "Rohit Jain",
+    "customerId": "CUST-1046",
+    "customerName": "Rohit Jain",
+    "travelDate": "2026-03-21",
+    "bookingDate": "2026-02-23",
+    "service": "Accommodation",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      },
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T14:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-VX57",
+    "leadPax": "Meera Iyer",
+    "customerId": "CUST-1047",
+    "customerName": "Meera Iyer",
+    "travelDate": "2026-03-22",
+    "bookingDate": "2026-02-23",
+    "service": "Transportation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      },
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      },
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T13:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-WY58",
+    "leadPax": "Anand Mishra",
+    "customerId": "CUST-1048",
+    "customerName": "Anand Mishra",
+    "travelDate": "2026-03-23",
+    "bookingDate": "2026-02-23",
+    "service": "Explore UAE",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      },
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T12:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-XZ59",
+    "leadPax": "Sumit Jha",
+    "customerId": "CUST-1049",
+    "customerName": "Sumit Jha",
+    "travelDate": "2026-03-24",
+    "bookingDate": "2026-02-23",
+    "service": "Hotel",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      },
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      },
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": true,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T11:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-Y[60",
+    "leadPax": "Priya Sharma",
+    "customerId": "CUST-1050",
+    "customerName": "Priya Sharma",
+    "travelDate": "2026-03-25",
+    "bookingDate": "2026-03-20",
+    "service": "Flight",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      },
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      },
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      },
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T10:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-ZB61",
+    "leadPax": "Rahul Verma",
+    "customerId": "CUST-1051",
+    "customerName": "Rahul Verma",
+    "travelDate": "2026-03-26",
+    "bookingDate": "2026-03-20",
+    "service": "Accommodation",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      },
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T09:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-AC62",
+    "leadPax": "Neha Kapoor",
+    "customerId": "CUST-1052",
+    "customerName": "Neha Kapoor",
+    "travelDate": "2026-03-27",
+    "bookingDate": "2026-03-20",
+    "service": "Transportation",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      },
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      },
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T08:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-BD63",
+    "leadPax": "Vikram Singh",
+    "customerId": "CUST-1053",
+    "customerName": "Vikram Singh",
+    "travelDate": "2026-03-28",
+    "bookingDate": "2026-03-20",
+    "service": "Explore UAE",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      },
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      },
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      },
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T07:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-CE64",
+    "leadPax": "Deepak Mehta",
+    "customerId": "CUST-1054",
+    "customerName": "Deepak Mehta",
+    "travelDate": "2026-03-29",
+    "bookingDate": "2026-03-20",
+    "service": "Hotel",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      },
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T06:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-DF65",
+    "leadPax": "Kavita Rao",
+    "customerId": "CUST-1055",
+    "customerName": "Kavita Rao",
+    "travelDate": "2026-03-30",
+    "bookingDate": "2026-03-20",
+    "service": "Flight",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      },
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      },
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T05:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-EG66",
+    "leadPax": "Arjun Patel",
+    "customerId": "CUST-1056",
+    "customerName": "Arjun Patel",
+    "travelDate": "2026-03-31",
+    "bookingDate": "2026-03-20",
+    "service": "Accommodation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      },
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      },
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": true,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T04:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-FH67",
+    "leadPax": "Sneha Gupta",
+    "customerId": "CUST-1057",
+    "customerName": "Sneha Gupta",
+    "travelDate": "2026-04-01",
+    "bookingDate": "2026-03-20",
+    "service": "Transportation",
+    "paymentStatus": "Paid",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T03:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-GI68",
+    "leadPax": "Rohit Jain",
+    "customerId": "CUST-1058",
+    "customerName": "Rohit Jain",
+    "travelDate": "2026-04-02",
+    "bookingDate": "2026-03-20",
+    "service": "Explore UAE",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      },
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      },
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T02:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-HJ69",
+    "leadPax": "Meera Iyer",
+    "customerId": "CUST-1059",
+    "customerName": "Meera Iyer",
+    "travelDate": "2026-04-03",
+    "bookingDate": "2026-03-20",
+    "service": "Hotel",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      },
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      },
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-03T01:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-IK70",
+    "leadPax": "Anand Mishra",
+    "customerId": "CUST-1060",
+    "customerName": "Anand Mishra",
+    "travelDate": "2026-03-05",
+    "bookingDate": "2026-02-18",
+    "service": "Flight",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Pending",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": true,
+    "modifiedAt": "2026-03-03T00:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-JL71",
+    "leadPax": "Sumit Jha",
+    "customerId": "CUST-1061",
+    "customerName": "Sumit Jha",
+    "travelDate": "2026-03-06",
+    "bookingDate": "2026-02-18",
+    "service": "Accommodation",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      },
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": true,
+    "modifiedAt": "2026-03-02T23:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-KM72",
+    "leadPax": "Priya Sharma",
+    "customerId": "CUST-1062",
+    "customerName": "Priya Sharma",
+    "travelDate": "2026-03-07",
+    "bookingDate": "2026-02-18",
+    "service": "Transportation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Rejected",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      },
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      },
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": true,
+    "modifiedAt": "2026-03-02T22:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-LN73",
+    "leadPax": "Rahul Verma",
+    "customerId": "CUST-1063",
+    "customerName": "Rahul Verma",
+    "travelDate": "2026-03-08",
+    "bookingDate": "2026-02-18",
+    "service": "Explore UAE",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Pending",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      },
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": true,
+    "requiresApproval": true,
+    "modifiedAt": "2026-03-02T21:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-MO74",
+    "leadPax": "Neha Kapoor",
+    "customerId": "CUST-1064",
+    "customerName": "Neha Kapoor",
+    "travelDate": "2026-03-09",
+    "bookingDate": "2026-02-18",
+    "service": "Hotel",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      },
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      },
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": true,
+    "modifiedAt": "2026-03-02T20:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-NP75",
+    "leadPax": "Vikram Singh",
+    "customerId": "CUST-1065",
+    "customerName": "Vikram Singh",
+    "travelDate": "2026-03-10",
+    "bookingDate": "2026-02-18",
+    "service": "Flight",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Rejected",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      },
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      },
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      },
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": true,
+    "modifiedAt": "2026-03-02T19:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-OQ76",
+    "leadPax": "Deepak Mehta",
+    "customerId": "CUST-1066",
+    "customerName": "Deepak Mehta",
+    "travelDate": "2026-03-11",
+    "bookingDate": "2026-02-18",
+    "service": "Accommodation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Pending",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "7",
+        "name": "Sofia Patel",
+        "initials": "SP",
+        "color": "#9333ea"
+      },
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": true,
+    "modifiedAt": "2026-03-02T18:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-PR77",
+    "leadPax": "Kavita Rao",
+    "customerId": "CUST-1067",
+    "customerName": "Kavita Rao",
+    "travelDate": "2026-03-12",
+    "bookingDate": "2026-02-18",
+    "service": "Transportation",
+    "paymentStatus": "Partially Paid",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "8",
+        "name": "Arun Patel",
+        "initials": "AP",
+        "color": "#ca8a04"
+      },
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      },
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": true,
+    "modifiedAt": "2026-03-02T17:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-QS78",
+    "leadPax": "Arjun Patel",
+    "customerId": "CUST-1068",
+    "customerName": "Arjun Patel",
+    "travelDate": "2026-03-13",
+    "bookingDate": "2026-02-18",
+    "service": "Explore UAE",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Rejected",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "9",
+        "name": "Vikram Choudhury",
+        "initials": "VC",
+        "color": "#4f46e5"
+      },
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      },
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      },
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": true,
+    "modifiedAt": "2026-03-02T16:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-RT79",
+    "leadPax": "Sneha Gupta",
+    "customerId": "CUST-1069",
+    "customerName": "Sneha Gupta",
+    "travelDate": "2026-03-14",
+    "bookingDate": "2026-02-18",
+    "service": "Hotel",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Pending",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "10",
+        "name": "Samantha Lee",
+        "initials": "SL",
+        "color": "#16a34a"
+      },
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": false,
+    "isIncomplete": false,
+    "requiresApproval": true,
+    "modifiedAt": "2026-03-02T15:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-SU80",
+    "leadPax": "Rohit Jain",
+    "customerId": "CUST-1070",
+    "customerName": "Rohit Jain",
+    "travelDate": "2026-03-15",
+    "bookingDate": "2026-02-18",
+    "service": "Flight",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "11",
+        "name": "James Patel",
+        "initials": "JP",
+        "color": "#e11d48"
+      },
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      },
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": true,
+    "isIncomplete": true,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-02T14:00:00.000Z",
+    "deletedAt": "2026-02-26T16:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-TV81",
+    "leadPax": "Meera Iyer",
+    "customerId": "CUST-1071",
+    "customerName": "Meera Iyer",
+    "travelDate": "2026-03-16",
+    "bookingDate": "2026-02-18",
+    "service": "Accommodation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "12",
+        "name": "Elena Gonzalez",
+        "initials": "EG",
+        "color": "#0d9488"
+      },
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      },
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": true,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-02T13:00:00.000Z",
+    "deletedAt": "2026-02-26T14:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-UW82",
+    "leadPax": "Anand Mishra",
+    "customerId": "CUST-1072",
+    "customerName": "Anand Mishra",
+    "travelDate": "2026-03-17",
+    "bookingDate": "2026-02-18",
+    "service": "Transportation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "13",
+        "name": "Isabelle Rodriguez",
+        "initials": "IR",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": true,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-02T12:00:00.000Z",
+    "deletedAt": "2026-02-26T12:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  },
+  {
+    "id": "OS-VX83",
+    "leadPax": "Sumit Jha",
+    "customerId": "CUST-1073",
+    "customerName": "Sumit Jha",
+    "travelDate": "2026-03-18",
+    "bookingDate": "2026-02-18",
+    "service": "Explore UAE",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 27580,
+    "owners": [
+      {
+        "id": "14",
+        "name": "Harsh Sharma",
+        "initials": "HS",
+        "color": "#6366f1"
+      },
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      },
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": true,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-02T11:00:00.000Z",
+    "deletedAt": "2026-02-26T10:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-WY84",
+    "leadPax": "Priya Sharma",
+    "customerId": "CUST-1074",
+    "customerName": "Priya Sharma",
+    "travelDate": "2026-03-19",
+    "bookingDate": "2026-02-18",
+    "service": "Hotel",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 28580,
+    "owners": [
+      {
+        "id": "15",
+        "name": "Harshita Roy",
+        "initials": "HR",
+        "color": "#ec4899"
+      },
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      },
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": true,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-02T10:00:00.000Z",
+    "deletedAt": "2026-02-26T08:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Travel Corp",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-XZ85",
+    "leadPax": "Rahul Verma",
+    "customerId": "CUST-1075",
+    "customerName": "Rahul Verma",
+    "travelDate": "2026-03-20",
+    "bookingDate": "2026-03-15",
+    "service": "Flight",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 24580,
+    "owners": [
+      {
+        "id": "1",
+        "name": "Ajay Thakur",
+        "initials": "AT",
+        "color": "#7c3aed"
+      },
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": true,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-02T09:00:00.000Z",
+    "deletedAt": "2026-02-26T06:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Confirmed",
+    "billedTo": "Direct Client",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-Y[86",
+    "leadPax": "Neha Kapoor",
+    "customerId": "CUST-1076",
+    "customerName": "Neha Kapoor",
+    "travelDate": "2026-03-21",
+    "bookingDate": "2026-03-15",
+    "service": "Accommodation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 25580,
+    "owners": [
+      {
+        "id": "2",
+        "name": "Harshit Roy",
+        "initials": "HR",
+        "color": "#2563eb"
+      },
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      }
+    ],
+    "taskCount": 1,
+    "isDeleted": true,
+    "isIncomplete": false,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-02T08:00:00.000Z",
+    "deletedAt": "2026-02-26T04:00:00.000Z",
+    "source": "Limitless",
+    "serviceStatus": "Rescheduled",
+    "billedTo": "Self",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580
+  },
+  {
+    "id": "OS-ZB87",
+    "leadPax": "Vikram Singh",
+    "customerId": "CUST-1077",
+    "customerName": "Vikram Singh",
+    "travelDate": "2026-03-22",
+    "bookingDate": "2026-03-15",
+    "service": "Transportation",
+    "paymentStatus": "Pending",
+    "bookingStatus": "Approved",
+    "amount": 26580,
+    "owners": [
+      {
+        "id": "3",
+        "name": "Ajay Kumar",
+        "initials": "AK",
+        "color": "#059669"
+      },
+      {
+        "id": "4",
+        "name": "Ajay Sharma",
+        "initials": "AS",
+        "color": "#d97706"
+      },
+      {
+        "id": "5",
+        "name": "Anjali Mehta",
+        "initials": "AM",
+        "color": "#dc2626"
+      },
+      {
+        "id": "6",
+        "name": "Rohan Singh",
+        "initials": "RS",
+        "color": "#0891b2"
+      }
+    ],
+    "taskCount": 0,
+    "isDeleted": true,
+    "isIncomplete": true,
+    "requiresApproval": false,
+    "modifiedAt": "2026-03-02T07:00:00.000Z",
+    "deletedAt": "2026-02-26T02:00:00.000Z",
+    "source": "OS",
+    "serviceStatus": "Cancelled",
+    "billedTo": "Company ABC",
+    "pendingCustomerAmount": 4580,
+    "pendingVendorAmount": 4580,
+    "destination": "UAE"
+  }
+]

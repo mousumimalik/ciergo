@@ -1,0 +1,12 @@
+{
+  "name": "Yash Manocha",
+  "role": "Sales Lead",
+  "avatar": "https://i.pravatar.cc/150?u=yash",
+  "isAdmin": true,
+  "canApproveAll": true,
+  "canApproveUsers": [
+    "1",
+    "2",
+    "3"
+  ]
+}

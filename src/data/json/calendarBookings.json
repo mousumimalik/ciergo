@@ -1,0 +1,72 @@
+[
+  {
+    "id": "OS-ABC12",
+    "time": "09:00",
+    "service": "Flight",
+    "route": "DEL → DXB",
+    "status": "Completed",
+    "day": 0,
+    "hourOffset": 0,
+    "stack": 0
+  },
+  {
+    "id": "OS-ABC15",
+    "time": "09:00",
+    "service": "Transport",
+    "route": "Airport Pickup",
+    "status": "Completed",
+    "day": 0,
+    "hourOffset": 0,
+    "stack": 1
+  },
+  {
+    "id": "OS-ABC14",
+    "time": "11:30",
+    "service": "Hotel",
+    "route": "Hotel Transfer",
+    "status": "Cancelled",
+    "day": 0,
+    "hourOffset": 2.5,
+    "stack": 0
+  },
+  {
+    "id": "OS-DEF34",
+    "time": "10:00",
+    "service": "Explore UAE",
+    "route": "Explore UAE",
+    "status": "On Trip",
+    "day": 1,
+    "hourOffset": 1,
+    "stack": 0
+  },
+  {
+    "id": "OS-GHI56",
+    "time": "11:00",
+    "service": "Transport",
+    "route": "4 Star",
+    "status": "Completed",
+    "day": 2,
+    "hourOffset": 2,
+    "stack": 0
+  },
+  {
+    "id": "OS-JKL78",
+    "time": "09:00",
+    "service": "Flight",
+    "route": "DEL → DXB",
+    "status": "Completed",
+    "day": 3,
+    "hourOffset": 0,
+    "stack": 0
+  },
+  {
+    "id": "OS-MNO90",
+    "time": "14:00",
+    "service": "Flight",
+    "route": "BOM → DEL",
+    "status": "Upcoming",
+    "day": 4,
+    "hourOffset": 5,
+    "stack": 0
+  }
+]

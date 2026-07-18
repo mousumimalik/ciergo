@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "name": "Ajay Thakur",
+    "initials": "AT",
+    "color": "#7c3aed"
+  },
+  {
+    "id": "2",
+    "name": "Harshit Roy",
+    "initials": "HR",
+    "color": "#2563eb"
+  },
+  {
+    "id": "3",
+    "name": "Ajay Kumar",
+    "initials": "AK",
+    "color": "#059669"
+  },
+  {
+    "id": "4",
+    "name": "Ajay Sharma",
+    "initials": "AS",
+    "color": "#d97706"
+  },
+  {
+    "id": "5",
+    "name": "Anjali Mehta",
+    "initials": "AM",
+    "color": "#dc2626"
+  },
+  {
+    "id": "6",
+    "name": "Rohan Singh",
+    "initials": "RS",
+    "color": "#0891b2"
+  },
+  {
+    "id": "7",
+    "name": "Sofia Patel",
+    "initials": "SP",
+    "color": "#9333ea"
+  },
+  {
+    "id": "8",
+    "name": "Arun Patel",
+    "initials": "AP",
+    "color": "#ca8a04"
+  },
+  {
+    "id": "9",
+    "name": "Vikram Choudhury",
+    "initials": "VC",
+    "color": "#4f46e5"
+  },
+  {
+    "id": "10",
+    "name": "Samantha Lee",
+    "initials": "SL",
+    "color": "#16a34a"
+  },
+  {
+    "id": "11",
+    "name": "James Patel",
+    "initials": "JP",
+    "color": "#e11d48"
+  },
+  {
+    "id": "12",
+    "name": "Elena Gonzalez",
+    "initials": "EG",
+    "color": "#0d9488"
+  },
+  {
+    "id": "13",
+    "name": "Isabelle Rodriguez",
+    "initials": "IR",
+    "color": "#7c3aed"
+  },
+  {
+    "id": "14",
+    "name": "Harsh Sharma",
+    "initials": "HS",
+    "color": "#6366f1"
+  },
+  {
+    "id": "15",
+    "name": "Harshita Roy",
+    "initials": "HR",
+    "color": "#ec4899"
+  }
+]
