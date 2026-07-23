@@ -28,15 +28,24 @@ export interface Owner {
 
 export interface Booking {
   id: string
+  apiId?: string
   leadPax: string
   customerId: string
   customerName: string
+  vendorId: string
+  vendorName: string
   travelDate: string
   bookingDate: string
   service: ServiceType
+  serviceLabel: string
   paymentStatus: PaymentStatus
   bookingStatus: BookingStatus
   amount: number
+  customerPaid: number
+  customerDue: number
+  vendorPaid: number
+  vendorDue: number
+  currency: string
   owners: Owner[]
   taskCount: number
   isDeleted: boolean

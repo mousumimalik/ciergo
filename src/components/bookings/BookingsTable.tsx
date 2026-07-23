@@ -22,6 +22,8 @@ import {
 } from 'lucide-react'
 import type { Booking, BookingTab, ApprovalFilter, ServiceType } from '../../types/booking'
 import { PaymentStatusCell, ServiceStatusCell } from '../ui/StatusBadge'
+import { computePaymentBreakdown } from '../../utils/paymentStatus'
+import type { Payment } from '../../types/payment'
 import { Pagination } from '../ui/Pagination'
 import { ServiceCell, OwnerAvatars } from './ServiceCell'
 import {
@@ -55,6 +57,7 @@ const SERVICE_FILTER_OPTIONS = [
 
 interface BookingsTableProps {
   data: Booking[]
+  payments?: Payment[]
   tab: BookingTab
   approvalFilter?: ApprovalFilter
   onAction: (action: string, booking: Booking) => void
@@ -69,6 +72,7 @@ interface BookingsTableProps {
 
 export function BookingsTable({
   data,
+  payments = [],
   tab,
   approvalFilter,
   onAction,
@@ -262,6 +266,7 @@ export function BookingsTable({
         enableSorting: true,
       },
       {
+        id: 'service',
         accessorKey: 'service',
         header: () => (
           <HeaderPopover
@@ -350,6 +355,7 @@ export function BookingsTable({
         cell: ({ row }) => (
           <ServiceCell
             service={row.original.service as ServiceType}
+            serviceLabel={row.original.serviceLabel}
             destination={row.original.destination}
           />
         ),
@@ -370,8 +376,7 @@ export function BookingsTable({
           ) : (
             <PaymentStatusCell
               status={row.original.paymentStatus}
-              customerAmount={row.original.pendingCustomerAmount}
-              vendorAmount={row.original.pendingVendorAmount}
+              breakdown={computePaymentBreakdown(row.original, payments)}
             />
           ),
       },
@@ -390,7 +395,7 @@ export function BookingsTable({
         ),
         cell: ({ getValue }) => (
           <div className="text-center">
-            <span className="text-[13px] font-medium text-[#111827]">
+            <span className="text-[13px] font-semibold text-[#111827]">
               {formatCurrency(getValue<number>())}
             </span>
           </div>
@@ -467,6 +472,7 @@ export function BookingsTable({
     onAction,
     onLedgerOpen,
     onSelectedRowsChange,
+    payments,
   ])
 
   const table = useReactTable({
@@ -523,6 +529,7 @@ export function BookingsTable({
                     key={cell.id}
                     className={cn(
                       'px-4 py-3 align-middle',
+                      cell.column.id === 'status' && 'overflow-visible',
                       ['owner', 'voucher', 'tasks', 'actions', 'status', 'amount', 'service'].includes(
                         cell.column.id,
                       ) && 'text-center',

@@ -10,11 +10,15 @@ import {
   Upload,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import type { Booking } from '../../types/booking'
 import { formatCurrency } from '../../utils/format'
 import { calculateSummary } from '../../utils/calculateSummary'
+import { DotLoader } from '../ui/DotLoader'
 import { cn } from '../../utils/cn'
 
 interface SummaryPillsProps {
+  bookings?: Booking[]
+  loading?: boolean
   showCalendarLink?: boolean
   calendarActive?: boolean
   selectionMode?: boolean
@@ -24,6 +28,8 @@ interface SummaryPillsProps {
 }
 
 export function SummaryPills({
+  bookings = [],
+  loading = false,
   showCalendarLink = true,
   calendarActive,
   selectionMode = false,
@@ -31,7 +37,7 @@ export function SummaryPills({
   onSelectAll,
   allSelected,
 }: SummaryPillsProps) {
-  const { youGive, youGet, net } = calculateSummary()
+  const { youGive, youGet, net } = calculateSummary(bookings)
   const netIsPositive = net >= 0
   const [moreOpen, setMoreOpen] = useState(false)
 
@@ -43,11 +49,11 @@ export function SummaryPills({
           <span className="text-[13px] text-text-secondary">Net:</span>
           <span
             className={cn(
-              'text-[13px] font-semibold',
-              netIsPositive ? 'text-success' : 'text-danger',
+              'inline-flex min-w-[72px] text-[13px] font-semibold',
+              loading ? 'text-[#9CA3AF]' : netIsPositive ? 'text-success' : 'text-danger',
             )}
           >
-            {formatCurrency(Math.abs(net))}
+            {loading ? <DotLoader /> : formatCurrency(Math.abs(net))}
           </span>
         </div>
 
@@ -56,8 +62,8 @@ export function SummaryPills({
             <ArrowUpRight className="h-3 w-3 text-danger" />
           </div>
           <span className="text-[13px] text-text-secondary">You Give:</span>
-          <span className="text-[13px] font-semibold text-danger">
-            {formatCurrency(youGive)}
+          <span className="inline-flex min-w-[72px] text-[13px] font-semibold text-danger">
+            {loading ? <DotLoader /> : formatCurrency(youGive)}
           </span>
         </div>
 
@@ -66,8 +72,8 @@ export function SummaryPills({
             <ArrowDownLeft className="h-3 w-3 text-success" />
           </div>
           <span className="text-[13px] text-text-secondary">You Get:</span>
-          <span className="text-[13px] font-semibold text-success">
-            {formatCurrency(youGet)}
+          <span className="inline-flex min-w-[72px] text-[13px] font-semibold text-success">
+            {loading ? <DotLoader /> : formatCurrency(youGet)}
           </span>
         </div>
       </div>

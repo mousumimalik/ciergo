@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { RotateCcw, ArrowLeftRight, ArrowUpDown } from 'lucide-react'
+import { RotateCcw, ArrowLeftRight, ArrowUpDown, Filter } from 'lucide-react'
 import { cn } from '../../utils/cn'
 
 interface PopoverProps {
@@ -29,7 +29,7 @@ export function HeaderPopover({ open, onClose, anchor, children, className }: Po
       {open && (
         <div
           className={cn(
-            'absolute left-0 top-full z-50 mt-1 min-w-[200px] rounded-xl border border-border bg-white shadow-lg',
+            'absolute left-0 top-full z-[100] mt-1 min-w-[200px] rounded-xl border border-[#E5E7EB] bg-white shadow-lg',
             className,
           )}
         >
@@ -50,15 +50,15 @@ export function FilterFooter({
   extra?: React.ReactNode
 }) {
   return (
-    <div className="flex items-center justify-between gap-2 border-t border-border px-3 py-2">
+    <div className="flex items-center justify-between gap-2 border-t border-[#E5E7EB] px-3 py-2">
       {extra}
       <div className="ml-auto flex items-center gap-2">
         <button
           type="button"
           onClick={onReset}
-          className="flex h-8 w-8 items-center justify-center rounded-lg border border-border hover:bg-surface"
+          className="flex h-8 w-8 items-center justify-center rounded-lg border border-[#E5E7EB] hover:bg-[#F9FAFB]"
         >
-          <RotateCcw className="h-3.5 w-3.5 text-muted" />
+          <RotateCcw className="h-3.5 w-3.5 text-[#9CA3AF]" />
         </button>
         <button
           type="button"
@@ -74,7 +74,9 @@ export function FilterFooter({
 
 export function ColumnLabel({ children }: { children: React.ReactNode }) {
   return (
-    <span className="text-[12px] font-medium text-[#6B7280]">{children}</span>
+    <span className="text-[12px] font-medium tracking-[0.01em] text-[#6B7280]">
+      {children}
+    </span>
   )
 }
 
@@ -92,7 +94,7 @@ export function ColumnHeaderButton({
       type="button"
       onClick={onClick}
       className={cn(
-        'inline-flex items-center gap-1 text-[12px] font-medium text-[#6B7280] hover:text-[#374151]',
+        'inline-flex items-center gap-1 text-[12px] font-medium tracking-[0.01em] text-[#6B7280] transition-colors hover:text-[#374151]',
         className,
       )}
     >
@@ -103,26 +105,26 @@ export function ColumnHeaderButton({
 
 export function FunnelIcon({ className }: { className?: string }) {
   return (
-    <svg
-      width="10"
-      height="8"
-      viewBox="0 0 10 8"
-      className={cn('shrink-0 text-[#9CA3AF]', className)}
-      aria-hidden
-    >
-      <path d="M0 0h10L5 8z" fill="currentColor" />
-    </svg>
+    <Filter
+      className={cn('h-3 w-3 shrink-0 text-[#9CA3AF]', className)}
+      strokeWidth={2}
+    />
   )
 }
 
 export function SwapIcon({ className }: { className?: string }) {
-  return <ArrowLeftRight className={cn('h-3.5 w-3.5 shrink-0 text-[#9CA3AF]', className)} strokeWidth={2} />
+  return (
+    <ArrowLeftRight
+      className={cn('h-3 w-3 shrink-0 text-[#9CA3AF]', className)}
+      strokeWidth={2}
+    />
+  )
 }
 
 export function BarSortIcon({ active }: { active?: boolean; direction?: 'asc' | 'desc' }) {
   return (
     <ArrowUpDown
-      className={cn('h-3.5 w-3.5 shrink-0', active ? 'text-primary' : 'text-[#9CA3AF]')}
+      className={cn('h-3 w-3 shrink-0', active ? 'text-primary' : 'text-[#9CA3AF]')}
       strokeWidth={2}
     />
   )

@@ -1,6 +1,7 @@
 import { useLocation, Link } from 'react-router-dom'
-import { Bell, Search, Home } from 'lucide-react'
-import { currentUser } from '../../data/mockBookings'
+import { Bell, Search, Home, PanelLeft } from 'lucide-react'
+import { currentUser } from '../../data/currentUser'
+import { cn } from '../../utils/cn'
 
 interface Crumb {
   label: string
@@ -19,12 +20,37 @@ const routeCrumbs: Record<string, Crumb[]> = {
   ],
 }
 
-export function Header() {
+interface HeaderProps {
+  collapsed?: boolean
+  onToggle?: () => void
+}
+
+export function Header({ collapsed = false, onToggle }: HeaderProps) {
   const location = useLocation()
   const crumbs = routeCrumbs[location.pathname] ?? routeCrumbs['/finance/bookings']
 
   return (
-    <header className="flex h-[56px] shrink-0 items-center border-b border-border bg-white px-5">
+    <header
+      className={cn(
+        'flex h-[56px] shrink-0 items-center border-b border-border bg-white',
+        collapsed ? 'gap-3 px-4' : 'px-5',
+      )}
+    >
+      {collapsed && (
+        <div className="flex h-[40px] shrink-0 items-center gap-2 rounded-xl border border-border bg-white px-3 shadow-sm">
+          <span className="text-[20px] font-bold tracking-tight text-primary">ciergo</span>
+          <button
+            type="button"
+            onClick={onToggle}
+            className="rounded-md p-1 text-muted hover:bg-surface"
+            title="Expand sidebar"
+            aria-label="Expand sidebar"
+          >
+            <PanelLeft className="h-5 w-5" />
+          </button>
+        </div>
+      )}
+
       <div className="flex min-w-0 flex-1 items-center">
         <nav className="flex items-center gap-1.5 text-[13px]">
           <Link to="/finance/bookings" className="text-muted hover:text-text-secondary">

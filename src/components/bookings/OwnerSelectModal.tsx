@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import { ChevronDown, RotateCcw, X } from 'lucide-react'
-import { owners } from '../../data/mockOwners'
+import { ChevronDown, RotateCcw, Search, X } from 'lucide-react'
+import type { Owner } from '../../types/booking'
 import { cn } from '../../utils/cn'
 
 interface OwnerSelectModalProps {
   open: boolean
   onClose: () => void
+  owners: Owner[]
   primaryOwners: string[]
   secondaryOwners: string[]
   advancedSearch: boolean
@@ -15,6 +16,7 @@ interface OwnerSelectModalProps {
 export function OwnerSelectModal({
   open,
   onClose,
+  owners,
   primaryOwners,
   secondaryOwners,
   advancedSearch,
@@ -76,6 +78,7 @@ export function OwnerSelectModal({
               {totalSelected} Owner(s) Selected
             </p>
             <OwnerSection
+              owners={owners}
               selected={tempPrimary}
               onChange={setTempPrimary}
               showHeader={false}
@@ -87,12 +90,14 @@ export function OwnerSelectModal({
           <div className="mt-4 grid grid-cols-2 gap-4">
             <OwnerSection
               title="Primary Owner(s)"
+              owners={owners}
               selected={tempPrimary}
               onChange={setTempPrimary}
               showHeader
             />
             <OwnerSection
               title="Secondary Owner(s)"
+              owners={owners}
               selected={tempSecondary}
               onChange={setTempSecondary}
               showHeader
@@ -123,16 +128,19 @@ export function OwnerSelectModal({
 
 function OwnerSection({
   title,
+  owners,
   selected,
   onChange,
   showHeader,
 }: {
   title?: string
+  owners: Owner[]
   selected: string[]
   onChange: (ids: string[]) => void
   showHeader: boolean
 }) {
   const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [search, setSearch] = useState('')
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -146,6 +154,10 @@ function OwnerSection({
     }
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [dropdownOpen])
+
+  const filteredOwners = owners.filter((owner) =>
+    owner.name.toLowerCase().includes(search.toLowerCase()),
+  )
 
   function toggle(id: string) {
     onChange(
@@ -179,24 +191,43 @@ function OwnerSection({
         </button>
 
         {dropdownOpen && (
-          <div className="absolute left-0 right-0 top-full z-20 mt-1 max-h-[200px] overflow-y-auto rounded-xl border border-border bg-white shadow-lg">
-            {owners.map((owner, i) => (
-              <label
-                key={owner.id}
-                className={cn(
-                  'flex cursor-pointer items-center gap-3 px-4 py-2.5 text-[13px] hover:bg-surface',
-                  i < owners.length - 1 && 'border-b border-border-light',
-                )}
-              >
+          <div className="absolute left-0 right-0 top-full z-20 mt-1 overflow-hidden rounded-xl border border-border bg-white shadow-lg">
+            <div className="border-b border-border-light p-2">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" />
                 <input
-                  type="checkbox"
-                  checked={selected.includes(owner.id)}
-                  onChange={() => toggle(owner.id)}
-                  className="h-4 w-4 rounded border-gray-300 text-primary accent-primary"
+                  type="text"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder="Search owner name..."
+                  className="h-[36px] w-full rounded-lg border border-border bg-white py-2 pl-9 pr-3 text-[13px] placeholder:text-muted focus:border-primary focus:outline-none"
+                  autoFocus
                 />
-                {owner.name}
-              </label>
-            ))}
+              </div>
+            </div>
+            <div className="max-h-[200px] overflow-y-auto">
+              {filteredOwners.length === 0 ? (
+                <p className="px-4 py-3 text-[13px] text-muted">No owners found</p>
+              ) : (
+                filteredOwners.map((owner, i) => (
+                  <label
+                    key={owner.id}
+                    className={cn(
+                      'flex cursor-pointer items-center gap-3 px-4 py-2.5 text-[13px] hover:bg-surface',
+                      i < filteredOwners.length - 1 && 'border-b border-border-light',
+                    )}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={selected.includes(owner.id)}
+                      onChange={() => toggle(owner.id)}
+                      className="h-4 w-4 rounded border-gray-300 text-primary accent-primary"
+                    />
+                    {owner.name}
+                  </label>
+                ))
+              )}
+            </div>
           </div>
         )}
       </div>

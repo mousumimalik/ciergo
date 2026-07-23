@@ -4,13 +4,7 @@ export function formatCurrency(amount: number): string {
   return `${CURRENCY} ${amount.toLocaleString('en-IN')}`
 }
 
-export function formatDate(dateStr: string): string {
-  const date = new Date(dateStr)
-  const day = date.getDate().toString().padStart(2, '0')
-  const month = date.toLocaleString('en-IN', { month: 'short' })
-  const year = date.getFullYear().toString().slice(-2)
-  return `${day} ${month} '${year}`
-}
+export { formatDisplayDate as formatDate } from './dates'
 
 export function getCurrentFinancialYear(): { start: string; end: string } {
   const now = new Date()

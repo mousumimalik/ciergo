@@ -18,24 +18,26 @@ const serviceIcons: Record<ServiceType, React.ElementType> = {
 
 interface ServiceCellProps {
   service: ServiceType
+  serviceLabel?: string
   destination?: string
   className?: string
 }
 
-export function ServiceCell({ service, destination, className }: ServiceCellProps) {
+export function ServiceCell({ service, serviceLabel, destination, className }: ServiceCellProps) {
   const Icon = serviceIcons[service] ?? MapPin
   const isExplore = service === 'Explore UAE'
+  const label = serviceLabel && serviceLabel !== 'NA' ? serviceLabel : service
 
   return (
     <div className={cn('flex flex-col items-center gap-0.5 py-0.5', className)}>
-      {destination && (
+      {destination && destination !== 'NA' && (
         <span className="text-[9px] font-semibold uppercase tracking-wide text-primary">
           {destination}
         </span>
       )}
       <Icon className="h-[18px] w-[18px] stroke-[1.5] text-primary" />
       {!isExplore && (
-        <span className="text-[11px] leading-tight text-[#374151]">{service}</span>
+        <span className="text-[11px] leading-tight text-[#374151]">{label}</span>
       )}
       {isExplore && (
         <span className="mt-0.5 rounded-full bg-[#F3EBF9] px-2 py-0.5 text-[10px] font-medium text-primary">

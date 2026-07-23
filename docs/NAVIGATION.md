@@ -1,54 +1,51 @@
-# Navigation & Routing
+# Navigation
 
-This document describes how navigation works in the Ciergo Finance → Bookings implementation.
+Routes, sidebar, and in-app navigation for the Finance → Bookings module.
 
 ## Routes
 
 | Path | Page | Description |
 |------|------|-------------|
-| `/` | Redirect | Redirects to `/finance/bookings` |
-| `/finance/bookings` | BookingsPage | Main bookings table with filters, tabs, and actions |
-| `/finance/bookings/calendar` | BookingCalendarPage | Weekly bookings timeline / calendar view |
+| `/` | Redirect | Sends users to `/finance/bookings` |
+| `/finance/bookings` | BookingsPage | Bookings table with filters, tabs, and actions |
+| `/finance/bookings/calendar` | BookingCalendarPage | Weekly bookings timeline |
 
 ## Sidebar
 
-The sidebar mirrors the Ciergo product navigation. Only the following destinations are wired to real routes:
+The sidebar follows the Ciergo product layout. Wired routes in this build:
 
 - **Finance → Bookings** → `/finance/bookings`
 
-All other sidebar items (Dashboard, Sales, Operations, Content, Directory, Reports, Settings, and other Finance sub-items) are displayed for UI parity but are not linked to pages in this assessment scope.
+Other items (Dashboard, Sales, Operations, Content, Directory, Reports, Settings, and other Finance links) are shown for layout parity and are not linked to pages.
 
-Expandable groups (Sales, Approvals, Finance, Directory) can be opened and closed. Finance auto-expands when the current route is under `/finance`.
+Expandable groups (Sales, Approvals, Finance, Directory) open and close on click. Finance expands automatically when the current path starts with `/finance`.
 
-## Header Breadcrumbs
+The sidebar can collapse to an icon strip; the Ciergo logo remains visible in the header area.
 
-Breadcrumbs update based on the active page:
+## Header breadcrumbs
 
-- Bookings list: `Home / Finance / Bookings`
-- Calendar view: `Home / Finance / Bookings / Booking Calendar`
+| Page | Trail |
+|------|-------|
+| Bookings list | Home / Finance / Bookings |
+| Calendar | Home / Finance / Bookings / Booking Calendar |
 
-## In-Page Navigation
+## Bookings ↔ Calendar
 
-### Bookings → Calendar
+- From bookings: calendar icon in the summary pills row → `/finance/bookings/calendar`
+- From calendar: same icon or **Finance → Bookings** in the sidebar
 
-Use the **calendar icon** in the summary pills row (top right) to open the Booking Calendar view at `/finance/bookings/calendar`.
+The calendar icon is highlighted on the calendar route.
 
-The calendar icon is highlighted when the calendar page is active.
+## Bookings page tabs
 
-### Calendar → Bookings
+| Tab | Content |
+|-----|---------|
+| Bookings | Active bookings (respects incomplete toggle) |
+| Deleted | Soft-deleted bookings |
+| Waiting for Approval | Incomplete bookings awaiting workflow |
 
-Use the same calendar icon toggle, or navigate via **Finance → Bookings** in the sidebar.
+On **Waiting for Approval**, use the **All / Pending / Approved / Rejected** dropdown to narrow rows.
 
-## Tabs (Bookings Page)
+## Customer ledger
 
-| Tab | Data shown |
-|-----|------------|
-| Bookings | Approved, non-deleted bookings |
-| Deleted | Soft-deleted bookings (restore / duplicate actions) |
-| Waiting for Approval | Pending, approved, or rejected bookings awaiting workflow |
-
-The **Waiting for Approval** tab includes an **All / Pending / Approved / Rejected** filter dropdown.
-
-## Customer Ledger
-
-Click any **Booking ID** in the table to open the Customer Ledger modal for that booking’s customer.
+Click any **Booking ID** in the table to open the customer ledger modal.

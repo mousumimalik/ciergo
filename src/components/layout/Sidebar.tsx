@@ -17,16 +17,22 @@ import {
 } from 'lucide-react'
 import { cn } from '../../utils/cn'
 
+interface NavChild {
+  label: string
+  path: string
+}
+
 interface NavItem {
   label: string
   icon: React.ElementType
   path?: string
-  children?: { label: string; path: string; highlighted?: boolean }[]
+  children?: NavChild[]
 }
 
-const ENABLED_PATHS = ['/finance/bookings', '/finance/bookings/calendar']
+/** Routes that exist in the app router — everything else is display-only. */
+const ENABLED_PATHS = new Set(['/finance/bookings', '/finance/bookings/calendar'])
 
-const DEFAULT_EXPANDED = ['Sales', 'Approvals', 'Directory']
+const DEFAULT_EXPANDED = ['Sales', 'Approvals', 'Finance', 'Directory']
 
 const navItems: NavItem[] = [
   { label: 'Dashboard', icon: LayoutDashboard, path: '/' },
@@ -35,7 +41,7 @@ const navItems: NavItem[] = [
     icon: Image,
     children: [
       { label: 'Leads', path: '/sales/leads' },
-      { label: 'Quotations', path: '/sales/quotations', highlighted: true },
+      { label: 'Quotations', path: '/sales/quotations' },
     ],
   },
   { label: 'Operations', icon: Hexagon, path: '/operations' },
@@ -45,7 +51,7 @@ const navItems: NavItem[] = [
     icon: ClipboardCheck,
     children: [
       { label: 'Bookings', path: '/approvals/bookings' },
-      { label: 'Payments', path: '/approvals/payments', highlighted: true },
+      { label: 'Payments', path: '/approvals/payments' },
     ],
   },
   { label: 'Content', icon: ClipboardList, path: '/content' },
@@ -66,14 +72,26 @@ const navItems: NavItem[] = [
     icon: BookUser,
     children: [
       { label: 'Customers', path: '/directory/customers' },
-      { label: 'Vendors', path: '/directory/vendors', highlighted: true },
+      { label: 'Vendors', path: '/directory/vendors' },
       { label: 'Team', path: '/directory/team' },
     ],
   },
   { label: 'Reports', icon: FileClock, path: '/reports' },
 ]
 
-export function Sidebar() {
+function isEnabledPath(path: string) {
+  return ENABLED_PATHS.has(path)
+}
+
+const disabledItemClass =
+  'cursor-not-allowed select-none text-muted/60 opacity-70'
+
+interface SidebarProps {
+  collapsed?: boolean
+  onToggle: () => void
+}
+
+export function Sidebar({ onToggle }: SidebarProps) {
   const location = useLocation()
   const [expanded, setExpanded] = useState<string[]>(() => {
     const initial = [...DEFAULT_EXPANDED]
@@ -90,14 +108,38 @@ export function Sidebar() {
   }
 
   function isChildActive(item: NavItem) {
-    return item.children?.some((c) => location.pathname === c.path) ?? false
+    return (
+      item.children?.some(
+        (c) =>
+          isEnabledPath(c.path) &&
+          (location.pathname === c.path || location.pathname.startsWith(`${c.path}/`)),
+      ) ?? false
+    )
+  }
+
+  function renderDisabledLeaf(label: string, key: string, className?: string) {
+    return (
+      <span
+        key={key}
+        aria-disabled="true"
+        className={cn('block rounded-md py-1.5 text-[13px]', disabledItemClass, className)}
+      >
+        {label}
+      </span>
+    )
   }
 
   return (
     <aside className="flex h-screen w-[260px] shrink-0 flex-col border-r border-border bg-white">
       <div className="flex items-center justify-between border-b border-border-light px-5 py-4">
         <span className="text-[22px] font-bold tracking-tight text-primary">ciergo</span>
-        <button type="button" className="rounded-md p-1 text-muted hover:bg-surface">
+        <button
+          type="button"
+          onClick={onToggle}
+          className="cursor-pointer rounded-md p-1 text-muted hover:bg-surface"
+          title="Collapse sidebar"
+          aria-label="Collapse sidebar"
+        >
           <PanelLeft className="h-5 w-5" />
         </button>
       </div>
@@ -134,17 +176,16 @@ export function Sidebar() {
                   <div className="relative mt-1 ml-[21px] border-l border-[#E0E0E0] pl-3">
                     <div className="space-y-0.5 py-0.5">
                       {item.children!.map((child) => {
-                        const enabled = ENABLED_PATHS.includes(child.path)
-
-                        if (enabled) {
+                        if (isEnabledPath(child.path)) {
                           return (
                             <NavLink
                               key={child.path}
                               to={child.path}
-                              className={({ isActive: childActive }) =>
+                              end={child.path === '/finance/bookings'}
+                              className={({ isActive }) =>
                                 cn(
                                   'block cursor-pointer rounded-md py-1.5 text-[13px] transition-colors',
-                                  childActive
+                                  isActive
                                     ? 'font-semibold text-primary'
                                     : 'text-muted hover:text-text',
                                 )
@@ -155,19 +196,7 @@ export function Sidebar() {
                           )
                         }
 
-                        return (
-                          <span
-                            key={child.path}
-                            className={cn(
-                              'block cursor-default select-none rounded-md py-1.5 text-[13px]',
-                              child.highlighted
-                                ? 'font-semibold text-primary'
-                                : 'text-muted/80',
-                            )}
-                          >
-                            {child.label}
-                          </span>
-                        )
+                        return renderDisabledLeaf(child.label, child.path)
                       })}
                     </div>
                   </div>
@@ -176,10 +205,33 @@ export function Sidebar() {
             )
           }
 
+          if (item.path && isEnabledPath(item.path)) {
+            return (
+              <NavLink
+                key={item.label}
+                to={item.path}
+                end
+                className={({ isActive }) =>
+                  cn(
+                    'flex cursor-pointer items-center gap-3 rounded-xl px-3 py-2.5 text-[13px] font-medium transition-colors',
+                    isActive ? 'font-semibold text-primary' : 'text-muted hover:text-text',
+                  )
+                }
+              >
+                <item.icon className="h-[18px] w-[18px] shrink-0 stroke-[1.5]" />
+                <span className="flex-1">{item.label}</span>
+              </NavLink>
+            )
+          }
+
           return (
             <span
               key={item.label}
-              className="flex cursor-default select-none items-center gap-3 rounded-xl px-3 py-2.5 text-[13px] font-medium text-muted/70"
+              aria-disabled="true"
+              className={cn(
+                'flex items-center gap-3 rounded-xl px-3 py-2.5 text-[13px] font-medium',
+                disabledItemClass,
+              )}
             >
               <item.icon className="h-[18px] w-[18px] shrink-0 stroke-[1.5]" />
               <span className="flex-1">{item.label}</span>
@@ -189,7 +241,13 @@ export function Sidebar() {
       </nav>
 
       <div className="border-t border-border-light px-3 py-3">
-        <span className="flex cursor-default select-none items-center gap-3 rounded-xl px-3 py-2.5 text-[13px] font-medium text-muted/70">
+        <span
+          aria-disabled="true"
+          className={cn(
+            'flex items-center gap-3 rounded-xl px-3 py-2.5 text-[13px] font-medium',
+            disabledItemClass,
+          )}
+        >
           <Settings className="h-[18px] w-[18px] shrink-0 stroke-[1.5]" />
           <span className="flex-1">Settings</span>
           <ChevronRight className="h-4 w-4 text-muted/70" />

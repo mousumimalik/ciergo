@@ -1,15 +1,26 @@
 # Ciergo — Finance Bookings
 
-Frontend implementation of the **Ciergo Finance → Bookings** dashboard, built as a React + TypeScript assessment project. All data is local mock data — no backend or API integration.
+React dashboard for **Finance → Bookings**: live booking and payment data, filters, summary metrics, and payment recording.
 
-## Quick Start
+The bookings table reads from the Ciergo API (MockAPI in development). The calendar view uses local fixture data.
+
+## Quick start
 
 ```bash
 npm install
+cp .env.example .env
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173)
+Open [http://localhost:5173](http://localhost:5173) — the app redirects to `/finance/bookings`.
+
+### Environment
+
+| Variable | Description |
+|----------|-------------|
+| `VITE_API_BASE_URL` | API base URL (default: `https://6a54c25de49d9eb2cc551b80.mockapi.io`) |
+
+Set `VITE_API_BASE_URL` in your deployment environment (e.g. Vercel → Project → Settings → Environment Variables).
 
 ### Production build
 
@@ -18,32 +29,23 @@ npm run build
 npm run preview
 ```
 
+## Documentation
+
+| Document | Contents |
+|----------|----------|
+| [docs/FEATURES.md](./docs/FEATURES.md) | Full feature reference — table, filters, payments, actions |
+| [docs/API.md](./docs/API.md) | HTTP endpoints and client usage |
+| [docs/NAVIGATION.md](./docs/NAVIGATION.md) | Routes, sidebar, breadcrumbs, tabs |
+| [docs/USER_JOURNEY.md](./docs/USER_JOURNEY.md) | End-to-end usage and verification steps |
+
 ## Routes
 
 | Route | View |
 |-------|------|
-| `/finance/bookings` | Bookings table (default) |
-| `/finance/bookings/calendar` | Bookings timeline / calendar |
+| `/finance/bookings` | Bookings table (API-backed) |
+| `/finance/bookings/calendar` | Booking calendar (local fixtures) |
 
-See [docs/NAVIGATION.md](./docs/NAVIGATION.md) for sidebar, breadcrumb, and in-page navigation details.
-
-## Features
-
-### Bookings Page
-- Summary pills: **Net** (green/red), **You Give** (red), **You Get** (green)
-- Filters: Booking Date, Travel Date, Booking Owner (multi-select + advanced search), Booking Type, search, reset
-- Tabs: **Bookings**, **Deleted**, **Waiting for Approval** (with All/Pending/Approved/Rejected dropdown)
-- Data table: sorting, column filters, pagination (10/20/50/100), status swap, row selection
-- Voucher dropdown: Booking Voucher(s), Customer Invoice(s), Vendor Voucher(s), Vendor Invoice(s)
-- Actions: payment record, edit, delete, link, duplicate, approve/reject, restore, send for approval
-- Customer Ledger modal: filters, You Collect/You Pay, view PDF, download, share
-
-### Calendar Page
-- Weekly timeline grid with booking cards
-- Status legend: Completed, On Trip, Upcoming, Cancelled
-- Date range navigation and filters
-
-## Tech Stack
+## Tech stack
 
 - React 19 + TypeScript
 - Vite 8
@@ -51,56 +53,32 @@ See [docs/NAVIGATION.md](./docs/NAVIGATION.md) for sidebar, breadcrumb, and in-p
 - TanStack Table
 - React Router
 - Lucide React
-- date-fns
+- moment (sorting and display dates)
+- date-fns (date range picker)
 
-## Project Structure
+## Project structure
 
 ```
 src/
+├── api/              # HTTP client, mappers, bookings & payments
 ├── components/
-│   ├── bookings/     # Table, filters, summary pills, modals
+│   ├── bookings/     # Table, filters, summary pills
 │   ├── layout/       # Sidebar, header, app shell
 │   ├── ledger/       # Customer ledger modal
-│   └── ui/           # Shared UI primitives
-├── data/
-│   ├── json/         # Mock JSON datasets
-│   ├── mockBookings.ts
-│   ├── mockOwners.ts
-│   └── mockLedger.ts
-├── pages/            # Route-level pages
-├── types/            # TypeScript interfaces
-└── utils/            # Formatting and helpers
+│   ├── payments/     # Record payment sidesheet, view payments
+│   └── ui/           # Shared primitives (Sidesheet, Modal, etc.)
+├── data/             # Fixtures (calendar, ledger, user permissions)
+├── hooks/            # useBookings, usePayments
+├── pages/            # Route pages
+├── types/            # TypeScript types
+└── utils/            # Payment status, formatting, sorting
 ```
-
-## Mock Data
-
-Static JSON files live in `src/data/json/`:
-
-| File | Purpose |
-|------|---------|
-| `bookings.json` | 78 booking records for the table |
-| `owners.json` | Booking owner profiles |
-| `ledger.json` | Customer ledger entries |
-| `currentUser.json` | Logged-in user (admin with full approval access) |
-| `summary.json` | You Give / You Get amounts for summary pills |
-| `calendarBookings.json` | Timeline cards for the calendar view |
-
-TypeScript modules in `src/data/` import these JSON files and export typed constants used across the app.
-
-## Assessment Notes
-
-Per the product brief:
-
-- UI follows the Figma designs for layout, colors, and interactions
-- All table interactions (filter, sort, paginate, tab switch) work against mock data
-- PDF download, share, and approval flows are UI-only with simulated behavior
-- No authentication, backend, database, or real API integration
 
 ## Scripts
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Type-check and build for production |
+| `npm run dev` | Development server |
+| `npm run build` | Type-check and production build |
 | `npm run preview` | Preview production build |
 | `npm run lint` | Run oxlint |

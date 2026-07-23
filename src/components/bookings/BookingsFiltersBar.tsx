@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Search, RotateCcw, ChevronDown } from 'lucide-react'
-import type { BookingsFilters, BookingType } from '../../types/booking'
+import type { BookingsFilters, BookingType, Owner } from '../../types/booking'
+import { DEFAULT_BOOKINGS_FILTERS } from '../../constants/bookingsFilters'
 import { DateRangePicker } from '../ui/DateRangePicker'
 import { OwnerSelectModal } from './OwnerSelectModal'
 import { cn } from '../../utils/cn'
@@ -8,6 +9,8 @@ import { cn } from '../../utils/cn'
 interface BookingsFiltersBarProps {
   filters: BookingsFilters
   onChange: (filters: BookingsFilters) => void
+  onReload?: () => void
+  owners?: Owner[]
   showSearchByAmount?: boolean
 }
 
@@ -16,6 +19,8 @@ const bookingTypes: BookingType[] = ['All Bookings', 'Other Services', 'Limitles
 export function BookingsFiltersBar({
   filters,
   onChange,
+  onReload,
+  owners = [],
   showSearchByAmount = true,
 }: BookingsFiltersBarProps) {
   const [ownerModalOpen, setOwnerModalOpen] = useState(false)
@@ -25,19 +30,9 @@ export function BookingsFiltersBar({
     ? filters.primaryOwners.length + filters.secondaryOwners.length
     : filters.primaryOwners.length
 
-  function handleReset() {
-    onChange({
-      bookingDateStart: '',
-      bookingDateEnd: '',
-      travelDateStart: '',
-      travelDateEnd: '',
-      primaryOwners: [],
-      secondaryOwners: [],
-      advancedOwnerSearch: false,
-      bookingType: 'All Bookings',
-      searchQuery: '',
-      showIncomplete: false,
-    })
+  function handleReload() {
+    onChange({ ...DEFAULT_BOOKINGS_FILTERS })
+    onReload?.()
   }
 
   return (
@@ -142,9 +137,9 @@ export function BookingsFiltersBar({
 
         <button
           type="button"
-          onClick={handleReset}
+          onClick={handleReload}
           className="mb-0.5 flex h-[38px] w-[38px] items-center justify-center rounded-lg border border-border hover:bg-surface"
-          title="Reset filters"
+          title="Reload data and reset filters"
         >
           <RotateCcw className="h-4 w-4 text-muted" />
         </button>
@@ -153,6 +148,7 @@ export function BookingsFiltersBar({
       <OwnerSelectModal
         open={ownerModalOpen}
         onClose={() => setOwnerModalOpen(false)}
+        owners={owners}
         primaryOwners={filters.primaryOwners}
         secondaryOwners={filters.secondaryOwners}
         advancedSearch={filters.advancedOwnerSearch}

@@ -1,5 +1,6 @@
 import { cn } from '../../utils/cn'
 import type { PaymentStatus, ServiceStatus } from '../../types/booking'
+import type { PaymentBreakdown } from '../../types/payment'
 import { formatCurrency } from '../../utils/format'
 
 const paymentStyles: Record<PaymentStatus, string> = {
@@ -42,26 +43,26 @@ export function StatusBadge({ status, className }: StatusBadgeProps) {
 
 export function PaymentStatusCell({
   status,
-  customerAmount,
-  vendorAmount,
+  breakdown,
 }: {
   status: PaymentStatus
-  customerAmount: number
-  vendorAmount: number
+  breakdown: PaymentBreakdown
 }) {
   return (
     <div className="group relative flex justify-center">
       <StatusBadge status={status} />
-      {status === 'Pending' && (
-        <div className="pointer-events-none absolute bottom-full left-1/2 z-50 mb-2 hidden -translate-x-1/2 group-hover:block">
-          <div className="whitespace-nowrap rounded-lg bg-[#2D2D2D] px-4 py-3 text-center text-[11px] text-white shadow-lg">
-            <p className="mb-1.5 underline decoration-white/60">PENDING AMOUNT</p>
-            <p>CUSTOMER : {formatCurrency(customerAmount)}</p>
-            <p>VENDOR : {formatCurrency(vendorAmount)}</p>
-            <div className="absolute -bottom-1 left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 bg-[#2D2D2D]" />
-          </div>
+      <div className="pointer-events-none absolute left-1/2 top-full z-[200] mt-2 hidden -translate-x-1/2 group-hover:block">
+        <div className="whitespace-nowrap rounded-lg bg-[#2D2D2D] px-4 py-3 text-center text-[11px] text-white shadow-xl">
+          <p className="mb-1.5 underline decoration-white/60">PAYMENT BREAKDOWN</p>
+          <p className="mb-1 font-medium">CUSTOMER</p>
+          <p>{formatCurrency(breakdown.customerPaid)} paid</p>
+          <p>{formatCurrency(breakdown.customerPending)} pending</p>
+          <p className="mb-1 mt-2 font-medium">VENDOR</p>
+          <p>{formatCurrency(breakdown.vendorPaid)} paid</p>
+          <p>{formatCurrency(breakdown.vendorPending)} pending</p>
+          <div className="absolute -top-1 left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 bg-[#2D2D2D]" />
         </div>
-      )}
+      </div>
     </div>
   )
 }
